@@ -11,7 +11,7 @@ def get_city_coordinates(city):
 st.sidebar.title("city coordinates finder and map display")
 city = st.sidebar.text_input("enter the name of a city")
 
-if st.sidebar.button("shw on map"):
+if st.sidebar.button("show on map"):
     coordinates= get_city_coordinates(city)
     st.header(city)
     st.success("coordinates of {}:{}".format(city,coordinates))
